@@ -19,4 +19,8 @@
     <Folder Include="Content\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DAL3\DAL3.csproj" />
+  </ItemGroup>
 </Project>

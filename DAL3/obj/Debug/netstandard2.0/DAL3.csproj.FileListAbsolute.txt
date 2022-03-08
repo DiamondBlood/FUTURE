@@ -1,0 +1,10 @@
+C:\Programming\FURTURE\FUTURE\DAL3\bin\Debug\netstandard2.0\DAL3.deps.json
+C:\Programming\FURTURE\FUTURE\DAL3\bin\Debug\netstandard2.0\DAL3.dll
+C:\Programming\FURTURE\FUTURE\DAL3\bin\Debug\netstandard2.0\DAL3.pdb
+C:\Programming\FURTURE\FUTURE\DAL3\obj\Debug\netstandard2.0\DAL3.csproj.AssemblyReference.cache
+C:\Programming\FURTURE\FUTURE\DAL3\obj\Debug\netstandard2.0\DAL3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programming\FURTURE\FUTURE\DAL3\obj\Debug\netstandard2.0\DAL3.AssemblyInfoInputs.cache
+C:\Programming\FURTURE\FUTURE\DAL3\obj\Debug\netstandard2.0\DAL3.AssemblyInfo.cs
+C:\Programming\FURTURE\FUTURE\DAL3\obj\Debug\netstandard2.0\DAL3.csproj.CoreCompileInputs.cache
+C:\Programming\FURTURE\FUTURE\DAL3\obj\Debug\netstandard2.0\DAL3.dll
+C:\Programming\FURTURE\FUTURE\DAL3\obj\Debug\netstandard2.0\DAL3.pdb

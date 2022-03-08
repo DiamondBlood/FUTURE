@@ -13,3 +13,6 @@ C:\Programming\FURTURE\FUTURE\FUTURE\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Programming\FURTURE\FUTURE\FUTURE\obj\Debug\netstandard2.0\FUTURE.dll
 C:\Programming\FURTURE\FUTURE\FUTURE\obj\Debug\netstandard2.0\ref\FUTURE.dll
 C:\Programming\FURTURE\FUTURE\FUTURE\obj\Debug\netstandard2.0\FUTURE.pdb
+C:\Programming\FURTURE\FUTURE\FUTURE\bin\Debug\netstandard2.0\DAL3.dll
+C:\Programming\FURTURE\FUTURE\FUTURE\bin\Debug\netstandard2.0\DAL3.pdb
+C:\Programming\FURTURE\FUTURE\FUTURE\obj\Debug\netstandard2.0\FUTURE.csproj.CopyComplete
