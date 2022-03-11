@@ -606,3 +606,6 @@ C:\Programming\FURTURE\FUTURE\FUTURE.Android\obj\Debug\110\android\assets\System
 C:\Programming\FURTURE\FUTURE\FUTURE.Android\obj\Debug\110\android\assets\System.Runtime.Extensions.dll
 C:\Programming\FURTURE\FUTURE\FUTURE.Android\obj\Debug\110\android\assets\System.Threading.dll
 C:\Programming\FURTURE\FUTURE\FUTURE.Android\obj\Debug\110\android\assets\System.Threading.Tasks.dll
+C:\Programming\FURTURE\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\fatdownphoto.jpg
+C:\Programming\FURTURE\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\muscleupphoto.jpg
+C:\Programming\FURTURE\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\reliefphoto.jpg

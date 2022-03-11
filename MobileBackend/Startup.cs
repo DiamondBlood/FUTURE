@@ -29,7 +29,7 @@ namespace MobileBackend
             {
                 options.UseSqlServer(_configuration.GetConnectionString("DbContextConnection"));
             });
-        }
+        }   
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

@@ -16,7 +16,7 @@ namespace FUTURE
             {
                 Source = "LoadingPagePic.jpg"
             };
-            splashImage.ScaleXTo(1.4);
+            splashImage.ScaleXTo(1.2);
             AbsoluteLayout.SetLayoutFlags(splashImage,
                 AbsoluteLayoutFlags.PositionProportional);
             AbsoluteLayout.SetLayoutBounds(splashImage,
@@ -29,7 +29,7 @@ namespace FUTURE
         {
             base.OnAppearing();
             splashImage.Opacity = 0;
-            await splashImage.FadeTo(1, 4000);
+            await splashImage.FadeTo(1, 2000);
             await splashImage.FadeTo(0, 2000);
             Application.Current.MainPage = new NavigationPage(new MainPage());
         }

@@ -12,7 +12,7 @@ namespace FUTURE
     {
         public MainPage()
         {
-
+            NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
             
         }

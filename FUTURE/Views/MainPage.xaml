@@ -5,8 +5,117 @@
              BackgroundColor="Black">
 
     <StackLayout>
+
         
-        <Label Text="Велком" TextColor="White"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="400"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="370"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="MainPage" VerticalOptions="StartAndExpand" ScaleY="1.1"/>
+            <Grid Margin="0,200,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition  Height="450"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="370"/>
+                </Grid.ColumnDefinitions>
+                <Rectangle Fill="White" 
+                            RadiusX="50"
+                            RadiusY="50"
+                            WidthRequest="110"
+                            HeightRequest="100"/>
+                <ScrollView>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition  Height="50"/>
+                        <RowDefinition  Height="120"/>
+                        <RowDefinition  Height="120"/>
+                        <RowDefinition  Height="120"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="365"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="ЦЕЛИ"  FontSize="35" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <Rectangle Margin="10,0,10,0"
+                               Grid.Row="1"
+                               Fill="White" 
+                               RadiusX="25"
+                               Stroke="Black"
+                               StrokeThickness="3"
+                               RadiusY="25"
+                               WidthRequest="110"
+                               HeightRequest="100"/>
+                        <Grid Grid.Row="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition  Height="40"/>
+                                <RowDefinition  Height="73"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition Width="230"/>
+                            </Grid.ColumnDefinitions>
+                            <Frame CornerRadius="20" Padding="0,0,0,0" Margin="14,3,0,2" Grid.RowSpan="2"> 
+                                <Image  Source="MuscleUpPhoto" Aspect="Fill" />
+                            </Frame>
+                            <Label Grid.Column="1" Grid.Row="0" Text="Набор массы" HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" TextColor="Black" />
+                            <Label Grid.Row="1" Grid.Column="1" Text="Этот раздел создан для тех, кто давно мечтает набрать массу" TextColor="Black" FontSize="15"/>
+                        </Grid>
+                        <Rectangle Margin="10,0,10,0"
+                               Grid.Row="2"
+                               Fill="White" 
+                               RadiusX="20"
+                               Stroke="Black"
+                               StrokeThickness="3"
+                               RadiusY="20"
+                               WidthRequest="110"
+                               HeightRequest="100"/>
+                        <Grid Grid.Row="2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition  Height="40"/>
+                                <RowDefinition  Height="73"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition Width="230"/>
+                            </Grid.ColumnDefinitions>
+                            <Frame CornerRadius="20" Padding="0,0,0,0" Margin="14,3,0,2" Grid.RowSpan="2">
+                                <Image  Source="ReliefPhoto" Aspect="Fill" />
+                            </Frame>
+                            <Label Grid.Column="1" Grid.Row="0" Text="Сушка" HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" TextColor="Black" />
+                            <Label Grid.Row="1" Grid.Column="1" Text="Если твоя цель сжечь жир и добиться максимального рельефа, эта программа для тебя" TextColor="Black" FontSize="15"/>
+                        </Grid>
+                        <Rectangle Margin="10,0,10,0"
+                               Grid.Row="3"
+                               Fill="White" 
+                               RadiusX="25"
+                               Stroke="Black"
+                               StrokeThickness="3"
+                               RadiusY="25"
+                               WidthRequest="110"
+                               HeightRequest="100"/>
+                        <Grid Grid.Row="3">
+                            <Grid.RowDefinitions>
+                                <RowDefinition  Height="40"/>
+                                <RowDefinition  Height="73"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="110"/>
+                                <ColumnDefinition Width="230"/>
+                            </Grid.ColumnDefinitions>
+                            <Frame CornerRadius="20" Padding="0,0,0,0" Margin="14,3,0,2" Grid.RowSpan="2">
+                                <Image  Source="FatDownPhoto" Aspect="Fill"  ScaleX="1.7"/>
+                            </Frame>
+                            <Label Grid.Column="1" Grid.Row="0" Text="Похудение" HorizontalOptions="Center" VerticalOptions="Center" FontSize="20" TextColor="Black" />
+                            <Label Grid.Row="1" Grid.Column="1" Text="Программа, созданная для построения стройного и красивого тела" TextColor="Black" FontSize="15"/>
+                        </Grid>
+                    </Grid>
+                </ScrollView>
+            </Grid>
+
+        </Grid>
     </StackLayout>
 
 </ContentPage>
