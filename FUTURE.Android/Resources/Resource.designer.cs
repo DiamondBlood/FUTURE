@@ -14,7 +14,7 @@ namespace FUTURE.Droid
 {
 	
 	
-	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
+	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "12.1.0.11")]
 	public partial class Resource
 	{
 		
@@ -11803,16 +11803,22 @@ namespace FUTURE.Droid
 			public const int notify_panel_notification_icon_bg = 2131165332;
 			
 			// aapt resource value: 0x7F070095
-			public const int ReliefPhoto = 2131165333;
+			public const int ok = 2131165333;
 			
 			// aapt resource value: 0x7F070096
-			public const int test_custom_background = 2131165334;
+			public const int ReliefPhoto = 2131165334;
 			
 			// aapt resource value: 0x7F070097
-			public const int tooltip_frame_dark = 2131165335;
+			public const int test_custom_background = 2131165335;
 			
 			// aapt resource value: 0x7F070098
-			public const int tooltip_frame_light = 2131165336;
+			public const int tooltip_frame_dark = 2131165336;
+			
+			// aapt resource value: 0x7F070099
+			public const int tooltip_frame_light = 2131165337;
+			
+			// aapt resource value: 0x7F07009A
+			public const int usermale = 2131165338;
 			
 			static Drawable()
 			{

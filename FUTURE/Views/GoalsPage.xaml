@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FUTURE.MainPage"
+             x:Class="FUTURE.Views.GoalsPage"
              BackgroundColor="Black">
 
     <StackLayout>
-
+        <Button Opacity="1" Clicked="Button_Clicked" BackgroundColor="Red"/>
 
         <Grid>
             <Grid.RowDefinitions>
@@ -29,7 +29,7 @@
                             HeightRequest="100"/>
                 <ScrollView>
                     <Grid >
-                        
+
                         <Grid.RowDefinitions>
                             <RowDefinition  Height="50"/>
                             <RowDefinition  Height="120"/>
@@ -40,7 +40,7 @@
                             <ColumnDefinition Width="410"/>
                         </Grid.ColumnDefinitions>
 
-                        <Button Grid.Row="1" Opacity="0" Clicked="MuscleUpTrainingNavigate"/>
+                        <Button Grid.Row="1" Opacity="1" Clicked="Button_Clicked" BackgroundColor="Red"/>
                         <Label FontAttributes="Bold" Text="ЦЕЛИ"  FontSize="35" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center"/>
                         <Rectangle Margin="10,0,10,0"
                                Grid.Row="1"
@@ -51,7 +51,7 @@
                                RadiusY="25"
                                WidthRequest="110"
                                HeightRequest="100"/>
-                        
+
                         <Grid Grid.Row="1" >
                             <Grid.RowDefinitions>
                                 <RowDefinition  Height="40"/>
@@ -61,7 +61,7 @@
                                 <ColumnDefinition Width="130"/>
                                 <ColumnDefinition Width="250"/>
                             </Grid.ColumnDefinitions>
-                            
+
                             <Frame CornerRadius="20" Padding="0,0,0,0" Margin="14,3,0,2" Grid.RowSpan="2">
                                 <Image  Source="MuscleUpPhoto" Aspect="Fill" />
                             </Frame>
@@ -120,7 +120,7 @@
                 </ScrollView>
             </Grid>
         </Grid>
-        
+
     </StackLayout>
 
 </ContentPage>

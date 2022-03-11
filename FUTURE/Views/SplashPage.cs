@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FUTURE.Views;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
@@ -31,7 +32,7 @@ namespace FUTURE
             splashImage.Opacity = 0;
             await splashImage.FadeTo(1, 2000);
             await splashImage.FadeTo(0, 2000);
-            Application.Current.MainPage = new NavigationPage(new MainPage());
+            Application.Current.MainPage = new NavigationPage(new GoalsPage());
         }
     }
 }

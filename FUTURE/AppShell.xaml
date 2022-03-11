@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:FUTURE.Views"
+             x:Class="FUTURE.AppShell">
+    <TabBar Shell.TabBarBackgroundColor="Blue"
+            Shell.TabBarTitleColor="White">
+
+        <Tab Title="Питание" Icon="ok.png">
+            <ShellContent ContentTemplate="{DataTemplate pages:GoalsPage}"/>
+        </Tab>
+
+        <Tab Title="Профиль" Icon="usermale.png">
+            <ShellContent ContentTemplate="{DataTemplate pages:ProfilePage}"/>
+        </Tab>
+    </TabBar>
+</Shell>

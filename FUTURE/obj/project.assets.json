@@ -3238,25 +3238,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\almaz\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\MateBook\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Programming\\FURTURE\\FUTURE\\FUTURE\\FUTURE.csproj",
+      "projectUniqueName": "D:\\Programming\\mobile\\FUTURE\\FUTURE\\FUTURE.csproj",
       "projectName": "FUTURE",
-      "projectPath": "C:\\Programming\\FURTURE\\FUTURE\\FUTURE\\FUTURE.csproj",
-      "packagesPath": "C:\\Users\\almaz\\.nuget\\packages\\",
-      "outputPath": "C:\\Programming\\FURTURE\\FUTURE\\FUTURE\\obj\\",
+      "projectPath": "D:\\Programming\\mobile\\FUTURE\\FUTURE\\FUTURE.csproj",
+      "packagesPath": "C:\\Users\\MateBook\\.nuget\\packages\\",
+      "outputPath": "D:\\Programming\\mobile\\FUTURE\\FUTURE\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\almaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\MateBook\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -3269,8 +3264,8 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Programming\\FURTURE\\FUTURE\\DAL3\\DAL3.csproj": {
-              "projectPath": "C:\\Programming\\FURTURE\\FUTURE\\DAL3\\DAL3.csproj"
+            "D:\\Programming\\mobile\\FUTURE\\DAL3\\DAL3.csproj": {
+              "projectPath": "D:\\Programming\\mobile\\FUTURE\\DAL3\\DAL3.csproj"
             }
           }
         }
@@ -3314,7 +3309,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

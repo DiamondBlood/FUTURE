@@ -3,8 +3,10 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "FUTURE.Android.dll" comes first in this list. */
 		"FUTURE.Android.dll",
+		"AngleSharp.dll",
 		"FormsViewGroup.dll",
 		"FUTURE.dll",
+		"Microsoft.Bcl.AsyncInterfaces.dll",
 		"Microsoft.EntityFrameworkCore.dll",
 		"Microsoft.Extensions.Caching.Abstractions.dll",
 		"Microsoft.Extensions.Caching.Memory.dll",
@@ -18,6 +20,8 @@ public class MonoPackageManager_Resources {
 		"System.Collections.Immutable.dll",
 		"System.Diagnostics.DiagnosticSource.dll",
 		"System.Interactive.Async.dll",
+		"System.Text.Encodings.Web.dll",
+		"System.Text.Json.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.Annotation.Experimental.dll",
@@ -68,6 +72,7 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Forms.Xaml.dll",
 		"Xamarin.Google.Android.Material.dll",
 		"Xamarin.Google.Guava.ListenableFuture.dll",
+		"YoutubeExplode.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};
