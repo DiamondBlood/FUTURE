@@ -16,3 +16,5 @@ C:\Programming\FURTURE\FUTURE\FUTURE\obj\Debug\netstandard2.0\FUTURE.pdb
 C:\Programming\FURTURE\FUTURE\FUTURE\bin\Debug\netstandard2.0\DAL3.dll
 C:\Programming\FURTURE\FUTURE\FUTURE\bin\Debug\netstandard2.0\DAL3.pdb
 C:\Programming\FURTURE\FUTURE\FUTURE\obj\Debug\netstandard2.0\FUTURE.csproj.CopyComplete
+C:\Programming\FURTURE\FUTURE\FUTURE\obj\Debug\netstandard2.0\Views\MuscleUpGoalsPage.xaml.g.cs
+C:\Programming\FURTURE\FUTURE\FUTURE\obj\Debug\netstandard2.0\Views\Exercises\BrenchPress.xaml.g.cs

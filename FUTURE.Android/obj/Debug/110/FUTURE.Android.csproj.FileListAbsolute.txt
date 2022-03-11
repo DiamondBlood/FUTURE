@@ -609,3 +609,7 @@ C:\Programming\FURTURE\FUTURE\FUTURE.Android\obj\Debug\110\android\assets\System
 C:\Programming\FURTURE\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\fatdownphoto.jpg
 C:\Programming\FURTURE\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\muscleupphoto.jpg
 C:\Programming\FURTURE\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\reliefphoto.jpg
+C:\Programming\FURTURE\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\backicon.png
+C:\Programming\FURTURE\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\brenchpress.jpg
+C:\Programming\FURTURE\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\crossover.jpg
+C:\Programming\FURTURE\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\dumbbellbenchpress.jpg
