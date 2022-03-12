@@ -78,9 +78,9 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="350"/>
                 </Grid.ColumnDefinitions>
-                <Button Opacity="0" Clicked="StartWorkout"/>
                 <Rectangle Style="{StaticResource RectangleDays}"/>
                 <Label Text="Начать" Style="{StaticResource WeeksDays}" FontSize="Large"/>
+                <Button Opacity="0" Clicked="StartWorkout"/>
             </Grid>
             <ScrollView Margin="0,20,0,0">
                 <Grid>

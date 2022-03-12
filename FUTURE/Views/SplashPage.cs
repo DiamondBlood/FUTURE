@@ -11,7 +11,7 @@ namespace FUTURE
         Image splashImage;
         public SplashPage()
         {
-            NavigationPage.SetHasNavigationBar(this, false);
+
             var sub = new AbsoluteLayout();
             splashImage = new Image
             {
@@ -32,7 +32,8 @@ namespace FUTURE
             splashImage.Opacity = 0;
             await splashImage.FadeTo(1, 2000);
             await splashImage.FadeTo(0, 2000);
-            Application.Current.MainPage = new NavigationPage(new GoalsPage());
+            
+            Application.Current.MainPage = new  AppShell();
         }
     }
 }

@@ -16,6 +16,7 @@ namespace FUTURE
         {
             InitializeComponent();
             //MainPage = new NavigationPage(new SplashPage());
+            Shell.SetNavBarIsVisible(this, false);
         }
     }
 }

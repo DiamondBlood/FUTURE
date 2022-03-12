@@ -3,13 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:pages="clr-namespace:FUTURE.Views"
              x:Class="FUTURE.AppShell">
-    <TabBar Shell.TabBarBackgroundColor="Blue"
-            Shell.TabBarTitleColor="White">
+    <TabBar Shell.TabBarBackgroundColor="Black"
+            Shell.TabBarTitleColor="#FFD15C"
+            Shell.BackgroundColor="Black"
+            Shell.TabBarUnselectedColor="White">
 
-        <Tab Title="Питание" Icon="ok.png">
+        <Tab Title="Питание" Icon="ok.png" >
+            <ShellContent ContentTemplate="{DataTemplate pages:Nutrition}"/>
+        </Tab>
+        <Tab Title="Цели" Icon="ok.png">
             <ShellContent ContentTemplate="{DataTemplate pages:GoalsPage}"/>
         </Tab>
-
         <Tab Title="Профиль" Icon="usermale.png">
             <ShellContent ContentTemplate="{DataTemplate pages:ProfilePage}"/>
         </Tab>

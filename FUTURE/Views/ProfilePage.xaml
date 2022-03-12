@@ -1,12 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FUTURE.Views.ProfilePage">
+             x:Class="FUTURE.Views.ProfilePage"
+             BackgroundColor="Black">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Профиль" TextColor="White" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Start"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+                <Frame BackgroundColor="#282525">
+                    <Image Source="ProfileIcon" HorizontalOptions="Start" VerticalOptions="Center"/>
+                </Frame>
+                <Label Text="@mail.tu" Style="{StaticResource WeeksDays} "/>
+            </Grid>
+            <Label Text="Вес" Style="{StaticResource Exercise}" HorizontalOptions="Center"/>
+            <Entry HorizontalOptions="Center"  TextColor="White"  WidthRequest="100"/>
+            <Label Text="Рост" Style="{StaticResource Exercise}" HorizontalOptions="Center"/>
+            <Entry HorizontalOptions="Center"  TextColor="White"  WidthRequest="100"/>
+            <Label Text="Возраст" Style="{StaticResource Exercise}" HorizontalOptions="Center"/>
+            <Entry HorizontalOptions="Center"  TextColor="White"  WidthRequest="100"/>
+            <Button BorderColor="White" Text="Изменить" HorizontalOptions="Center" TextColor="White" BackgroundColor="Black"/>
+            <Button BorderColor="White" Text="Прогресс" HorizontalOptions="Center" TextColor="White" BackgroundColor="Black"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
