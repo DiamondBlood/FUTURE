@@ -43,3 +43,4 @@ C:\Programming\Future3.0\FUTURE\FUTURE\obj\Debug\netstandard2.0\FUTURE.dll
 C:\Programming\Future3.0\FUTURE\FUTURE\obj\Debug\netstandard2.0\ref\FUTURE.dll
 C:\Programming\Future3.0\FUTURE\FUTURE\obj\Debug\netstandard2.0\FUTURE.pdb
 C:\Programming\Future3.0\FUTURE\FUTURE\obj\Debug\netstandard2.0\Views\Nutrition.xaml.g.cs
+D:\Programming\mobile\FUTURE\FUTURE\obj\Debug\netstandard2.0\Views\Nutrition.xaml.g.cs

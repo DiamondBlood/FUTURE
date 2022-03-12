@@ -1873,3 +1873,12 @@ C:\Programming\Future3.0\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\dinner
 C:\Programming\Future3.0\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\lunch.jpg
 C:\Programming\Future3.0\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\poldnik.jpg
 C:\Programming\Future3.0\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\snack.jpg
+D:\Programming\mobile\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\profileicon.png
+D:\Programming\mobile\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\breakfast.jpg
+D:\Programming\mobile\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\dinner.jpg
+D:\Programming\mobile\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\lunch.jpg
+D:\Programming\mobile\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\poldnik.jpg
+D:\Programming\mobile\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\snack.jpg
+D:\Programming\mobile\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\goal.png
+D:\Programming\mobile\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\fork.png
+D:\Programming\mobile\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\loading.xml

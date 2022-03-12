@@ -4,14 +4,14 @@
              xmlns:pages="clr-namespace:FUTURE.Views"
              x:Class="FUTURE.AppShell">
     <TabBar Shell.TabBarBackgroundColor="Black"
-            Shell.TabBarTitleColor="#FFD15C"
-            Shell.BackgroundColor="Black"
+            Shell.TabBarTitleColor="DarkSlateBlue"
+            Shell.BackgroundColor="White"
             Shell.TabBarUnselectedColor="White">
 
-        <Tab Title="Питание" Icon="ok.png" >
+        <Tab Title="Питание" Icon="fork.png" >
             <ShellContent ContentTemplate="{DataTemplate pages:Nutrition}"/>
         </Tab>
-        <Tab Title="Цели" Icon="ok.png">
+        <Tab Title="Цели" Icon="goal.png">
             <ShellContent ContentTemplate="{DataTemplate pages:GoalsPage}"/>
         </Tab>
         <Tab Title="Профиль" Icon="usermale.png">
