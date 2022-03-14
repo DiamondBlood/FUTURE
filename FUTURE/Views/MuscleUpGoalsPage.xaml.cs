@@ -22,5 +22,10 @@ namespace FUTURE.Views
         {
             await Navigation.PushAsync(new Views.Exercises.BrenchPress());
         }
+
+        private async void BackButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new GoalsPage());
+        }
     }
 }

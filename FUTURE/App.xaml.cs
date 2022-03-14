@@ -10,7 +10,7 @@ namespace FUTURE
         {
             InitializeComponent();
             MainPage = new AppShell();
-           // MainPage = new NavigationPage(new SplashPage());
+          
         }
 
         protected override void OnStart()

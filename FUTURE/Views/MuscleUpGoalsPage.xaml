@@ -11,10 +11,12 @@
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="70"/>
-                <ColumnDefinition Width="300"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Image Source="BackIcon"/>
-            <Label Margin="0,0,15,0" Grid.Column="1" Text="Набор массы" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24" FontAttributes="Bold"/>
+                
+                <Image Source="BackIcon"/>
+                <Button Opacity="0" Clicked="BackButton_Clicked"/>
+                <Label Margin="0,0,55,0" Grid.Column="1" Text="Набор массы" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24" FontAttributes="Bold"/>
         </Grid>
             <ScrollView Orientation="Horizontal">
             <Grid>
@@ -71,12 +73,12 @@
                     <Label Margin="0,0,10,0"  Grid.Column="6" Text="День 7" Style="{StaticResource WeeksDays}"/>
                 </Grid>
             </ScrollView>
-            <Grid Margin="35,20,0,0">
+            <Grid Margin="25,20,10,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="45"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="350"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Rectangle Style="{StaticResource RectangleDays}"/>
                 <Label Text="Начать" Style="{StaticResource WeeksDays}" FontSize="Large"/>
@@ -90,7 +92,7 @@
                         <RowDefinition Height="200"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="410"/>
+                        <ColumnDefinition Width="* "/>
                     </Grid.ColumnDefinitions>
                     <Image Source="BrenchPress" Opacity="0.7" />
                     <Label Text="Жим лежа" Style="{StaticResource Exercise}"/>

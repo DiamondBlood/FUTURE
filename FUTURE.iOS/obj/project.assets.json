@@ -4195,21 +4195,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MateBook\\.nuget\\packages\\": {}
+    "C:\\Users\\almaz\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programming\\mobile\\FUTURE\\FUTURE.iOS\\FUTURE.iOS.csproj",
+      "projectUniqueName": "C:\\Programming\\Future3.0\\FUTURE\\FUTURE.iOS\\FUTURE.iOS.csproj",
       "projectName": "FUTURE.iOS",
-      "projectPath": "D:\\Programming\\mobile\\FUTURE\\FUTURE.iOS\\FUTURE.iOS.csproj",
-      "packagesPath": "C:\\Users\\MateBook\\.nuget\\packages\\",
-      "outputPath": "D:\\Programming\\mobile\\FUTURE\\FUTURE.iOS\\obj\\",
+      "projectPath": "C:\\Programming\\Future3.0\\FUTURE\\FUTURE.iOS\\FUTURE.iOS.csproj",
+      "packagesPath": "C:\\Users\\almaz\\.nuget\\packages\\",
+      "outputPath": "C:\\Programming\\Future3.0\\FUTURE\\FUTURE.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\MateBook\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\almaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
@@ -4221,8 +4226,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "D:\\Programming\\mobile\\FUTURE\\FUTURE\\FUTURE.csproj": {
-              "projectPath": "D:\\Programming\\mobile\\FUTURE\\FUTURE\\FUTURE.csproj"
+            "C:\\Programming\\Future3.0\\FUTURE\\FUTURE\\FUTURE.csproj": {
+              "projectPath": "C:\\Programming\\Future3.0\\FUTURE\\FUTURE\\FUTURE.csproj"
             }
           }
         }

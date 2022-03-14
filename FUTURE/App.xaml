@@ -68,6 +68,27 @@
             <Setter Property="Aspect" Value="Fill"/>
         </Style>
 
+        <Style x:Key="ExerciseGoals" TargetType="Label">
+            <Setter Property="TextColor" Value="#D4D4D4"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+            <Setter Property="VerticalOptions" Value="Center"/>
+        </Style>
 
+        <Style x:Key="ExerciseLine" TargetType="Line">
+            <Setter Property="BackgroundColor" Value="#D4D4D4" />
+            <Setter Property="Y1" Value="1"/>
+            <Setter Property="Y2" Value="1"/>
+            <Setter Property="X1" Value="0"/>
+        </Style>
+
+        <Style x:Key="ExerciseEntry" TargetType="Entry">
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+
+        </Style>
+        
     </Application.Resources>
 </Application>
