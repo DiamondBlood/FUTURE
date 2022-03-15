@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodels="clr-namespace:FUTURE.ViewModels" x:DataType="viewmodels:UserDataViewModel"
              x:Class="FUTURE.Views.ProfilePage"
              BackgroundColor="Black">
     <ContentPage.Content>
@@ -15,12 +15,18 @@
                 </Frame>
                 <Label Text="@mail.tu" Style="{StaticResource WeeksDays} "/>
             </Grid>
-            <Label Text="Вес" Style="{StaticResource Exercise}" HorizontalOptions="Center"/>
-            <Entry HorizontalOptions="Center"  TextColor="White"  WidthRequest="100"/>
-            <Label Text="Рост" Style="{StaticResource Exercise}" HorizontalOptions="Center"/>
-            <Entry HorizontalOptions="Center"  TextColor="White"  WidthRequest="100"/>
-            <Label Text="Возраст" Style="{StaticResource Exercise}" HorizontalOptions="Center"/>
-            <Entry HorizontalOptions="Center"  TextColor="White"  WidthRequest="100"/>
+            <Label Text="Вес" Style="{StaticResource Exercise}" HorizontalOptions="Center"
+                   BindingContext="{x:Reference Name=entryWeight}"/>
+            <Entry HorizontalOptions="Center"  TextColor="White"  WidthRequest="100" x:Name="entryWeight"
+                   Text="{Binding Weight}"/>
+            <Label Text="Рост" Style="{StaticResource Exercise}" HorizontalOptions="Center"
+                   BindingContext="{x:Reference Name=entryHeight}"/>
+            <Entry HorizontalOptions="Center"  TextColor="White"  WidthRequest="100" x:Name="entryHeight"
+                   Text="{Binding Height}"/>
+            <Label Text="Возраст" Style="{StaticResource Exercise}" HorizontalOptions="Center"
+                   BindingContext="{x:Reference Name=entryAge}"/>
+            <Entry HorizontalOptions="Center"  TextColor="White"  WidthRequest="100" x:Name="entryAge"
+                   Text="{Binding Age}"/>
             <Button BorderColor="White" Text="Изменить" HorizontalOptions="Center" TextColor="White" BackgroundColor="Black"/>
             <Button BorderColor="White" Text="Прогресс" HorizontalOptions="Center" TextColor="White" BackgroundColor="Black"/>
         </StackLayout>

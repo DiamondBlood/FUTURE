@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FUTURE.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,10 +13,12 @@ namespace FUTURE.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ProfilePage : ContentPage
     {
+        UserDataViewModel vm = new UserDataViewModel();
         public ProfilePage()
         {
             NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
+            this.BindingContext = vm;
         }
     }
 }
