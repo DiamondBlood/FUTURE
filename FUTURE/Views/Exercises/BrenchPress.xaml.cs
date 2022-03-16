@@ -20,7 +20,29 @@ namespace FUTURE.Views.Exercises
 
         private async void BackButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MuscleUpGoalsPage());
+            await Navigation.PushAsync(new BrenchPress());
+        }
+
+        private void Ok1(object sender, EventArgs e)
+        {
+            OkImage1.IsVisible = true;
+        }
+        private void Ok2(object sender, EventArgs e)
+        {
+            OkImage2.IsVisible = true;
+        }
+        private void Ok3(object sender, EventArgs e)
+        {
+            OkImage3.IsVisible = true;
+        }
+        private void Ok4(object sender, EventArgs e)
+        {
+            OkImage4.IsVisible = true;
+        }
+
+        private async void NextExercise(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new DumbbellDenchpress());
         }
     }
 }

@@ -1885,3 +1885,4 @@ D:\Programming\mobile\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\loading.x
 C:\Programming\Future3.0\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\goal.png
 C:\Programming\Future3.0\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\fork.png
 C:\Programming\Future3.0\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\loading.xml
+C:\Programming\Future3.0\FUTURE\FUTURE.Android\obj\Debug\110\res\drawable\tapok.png

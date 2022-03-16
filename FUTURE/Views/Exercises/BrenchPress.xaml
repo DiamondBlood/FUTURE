@@ -100,16 +100,29 @@
                     <Entry Grid.Column="2" Grid.Row="2" Style="{StaticResource ExerciseEntry}"/>
                     <Entry Grid.Column="2" Grid.Row="4" Style="{StaticResource ExerciseEntry}"/>
                     <Entry Grid.Column="2" Grid.Row="6" Style="{StaticResource ExerciseEntry}"/>
+                    <Image Grid.Column="3" Grid.Row="0" Source="Tapok" Scale="0.5" Margin="0,0,20,0"/>
+                    <Image Grid.Column="3" Grid.Row="2" Source="Tapok" Scale="0.5" Margin="0,0,20,0"/>
+                    <Image Grid.Column="3" Grid.Row="4" Source="Tapok" Scale="0.5" Margin="0,0,20,0"/>
+                    <Image Grid.Column="3" Grid.Row="6" Source="Tapok" Scale="0.5" Margin="0,0,20,0"/>
+                    <Image x:Name="OkImage1" Grid.Column="3" Grid.Row="0" Source="Ok" Scale="0.5" Margin="0,0,20,0" IsVisible="False"/>
+                    <Image x:Name="OkImage2" Grid.Column="3" Grid.Row="2" Source="Ok" Scale="0.5" Margin="0,0,20,0" IsVisible="False"/>
+                    <Image x:Name="OkImage3" Grid.Column="3" Grid.Row="4" Source="Ok" Scale="0.5" Margin="0,0,20,0" IsVisible="False"/>
+                    <Image x:Name="OkImage4" Grid.Column="3" Grid.Row="6" Source="Ok" Scale="0.5" Margin="0,0,20,0" IsVisible="False"/>
+                    <Button Grid.Column="3" Grid.Row="0" Scale="0.7" Margin="0,0,20,0" Opacity="0" Clicked="Ok1"/>
+                    <Button Grid.Column="3" Grid.Row="2" Scale="0.7" Margin="0,0,20,0" Opacity="0" Clicked="Ok2"/>
+                    <Button Grid.Column="3" Grid.Row="4" Scale="0.7" Margin="0,0,20,0" Opacity="0" Clicked="Ok3"/>
+                    <Button Grid.Column="3" Grid.Row="6" Scale="0.7" Margin="0,0,20,0" Opacity="0" Clicked="Ok4"/>
                     <Line Grid.ColumnSpan="4" Grid.Row="1" Style="{StaticResource ExerciseLine}"/>
                     <Line Grid.ColumnSpan="4" Grid.Row="3" Style="{StaticResource ExerciseLine}"/>
                     <Line Grid.ColumnSpan="4" Grid.Row="5" Style="{StaticResource ExerciseLine}"/>
                     <Line Grid.ColumnSpan="4" Grid.Row="7" Style="{StaticResource ExerciseLine}"/>
                     
+                    
 
                 </Grid>
                 <Frame Padding="1" CornerRadius="5" BackgroundColor="#FFD15C" Margin="30,10,30,10" HeightRequest="50">
                     <Frame BackgroundColor="Black" CornerRadius="5" Padding="1" >
-                        <Button Text="Завершить упражнение" TextColor="White" BackgroundColor="Black" FontSize="20"/>
+                        <Button Text="Завершить упражнение" TextColor="White" BackgroundColor="Black" FontSize="20" Clicked="NextExercise"/>
                     </Frame>
                 </Frame>
 
