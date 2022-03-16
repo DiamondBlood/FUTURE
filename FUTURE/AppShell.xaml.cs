@@ -1,9 +1,10 @@
-﻿using System;
+﻿using FUTURE.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,7 +16,6 @@ namespace FUTURE
         public AppShell()
         {
             InitializeComponent();
-            //MainPage = new NavigationPage(new SplashPage());
             Shell.SetNavBarIsVisible(this, false);
         }
     }

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FUTURE.Views.LoginPage"
+             BackgroundColor="Black">
+    <StackLayout>
+        <StackLayout>
+            <Label Text="Приветствуем в качалке" HorizontalOptions="Center"/>
+            <Frame Margin="40,12" CornerRadius="30" BackgroundColor="Aqua">
+                <Entry x:Name="Mail"/>
+            </Frame>
+            <Label Text="ВХОД" TextColor="Red" FontSize="24" HorizontalOptions="Center" Margin="12">
+                <Label.GestureRecognizers >
+                    <TapGestureRecognizer Tapped="LogIn_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

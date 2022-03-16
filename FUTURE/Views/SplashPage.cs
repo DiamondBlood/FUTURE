@@ -33,7 +33,7 @@ namespace FUTURE
             await splashImage.FadeTo(1, 2000);
             await splashImage.FadeTo(0, 2000);
             
-            Application.Current.MainPage = new  AppShell();
+            Application.Current.MainPage = new LoginPage();
         }
     }
 }
