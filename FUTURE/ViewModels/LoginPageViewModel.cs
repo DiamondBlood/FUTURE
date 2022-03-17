@@ -16,7 +16,7 @@ namespace FUTURE.ViewModels
             user.Mail = login;
             if (user != null)
             {
-                Preferences.Set("current_user_id", user.ID);
+                Preferences.Set("user_name", user.Mail);
                 Application.Current.MainPage = new AppShell();
             }
             else

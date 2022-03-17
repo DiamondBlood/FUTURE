@@ -6,8 +6,7 @@ namespace DAL3.Models
 {
     public class UserMuscleUpProgress
     {
-        
-        public int UserID { get; set; }
+        public int UserId { get; set; }
         public int MuscleUpProgress { get; set; }
     }
 }

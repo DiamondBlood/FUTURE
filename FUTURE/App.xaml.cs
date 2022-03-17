@@ -12,7 +12,7 @@ namespace FUTURE
         {
             InitializeComponent();
             MainPage = new LoginPage();
-            if (Preferences.Get("current_user_id", 0) != 0)
+            if (Preferences.Get("user_name", "") != "")
                 Application.Current.MainPage = new AppShell();
             else
                 Application.Current.MainPage = new NavigationPage(new LoginPage());

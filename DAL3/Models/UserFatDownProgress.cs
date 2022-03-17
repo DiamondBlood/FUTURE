@@ -8,8 +8,8 @@ namespace DAL3.Models
     public class UserFatDownProgress
     {
         
-        public int UserID { get; set; }
-        public int FatDownProgressID { get; set; }
+        public int UserId { get; set; }
+        public int FatDownProgressId { get; set; }
 
     }
 }

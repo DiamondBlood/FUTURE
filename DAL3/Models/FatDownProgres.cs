@@ -8,7 +8,7 @@ namespace DAL3.Models
     public class FatDownProgress
     {
         [Key]
-        public int ID { get; set; }
+        public int Id { get; set; }
         public int FatDownProgressId { get; set; }
         public string Exercise { get; set; }
         public int Count { get; set; }

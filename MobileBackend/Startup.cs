@@ -27,7 +27,7 @@ namespace MobileBackend
             services.AddControllers();
             services.AddDbContext<ApplicationContext>(options =>
             {
-                options.UseSqlServer(_configuration.GetConnectionString("DbContextConnection"));
+                options.UseNpgsql("Host=localhost;Username=postgres;Password=61288f49;Database=Future");
             });
         }   
 

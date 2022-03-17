@@ -2,9 +2,9 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MobileBackend;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace MobileBackend.Migrations
 {
@@ -15,128 +15,128 @@ namespace MobileBackend.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .UseIdentityColumns()
-                .HasAnnotation("Relational:MaxIdentifierLength", 128)
+                .UseIdentityByDefaultColumns()
+                .HasAnnotation("Relational:MaxIdentifierLength", 63)
                 .HasAnnotation("ProductVersion", "5.0.0");
 
             modelBuilder.Entity("DAL3.Models.FatDownProgress", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasColumnType("integer")
+                        .UseIdentityByDefaultColumn();
 
                     b.Property<int>("Count")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<string>("Exercise")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<int>("FatDownProgressId")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<float>("Weight")
                         .HasColumnType("real");
 
-                    b.HasKey("ID");
+                    b.HasKey("Id");
 
                     b.ToTable("FatDownProgress");
                 });
 
             modelBuilder.Entity("DAL3.Models.MuscleUpProgress", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasColumnType("integer")
+                        .UseIdentityByDefaultColumn();
 
                     b.Property<int>("Count")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<string>("Exercise")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<int>("MuscleUpProgressId")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<float>("Weight")
                         .HasColumnType("real");
 
-                    b.HasKey("ID");
+                    b.HasKey("Id");
 
                     b.ToTable("MuscleUpProgress");
                 });
 
             modelBuilder.Entity("DAL3.Models.ReliefProgress", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasColumnType("integer")
+                        .UseIdentityByDefaultColumn();
 
                     b.Property<int>("Count")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<string>("Exercise")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<int>("ReliefProgressId")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<float>("Weight")
                         .HasColumnType("real");
 
-                    b.HasKey("ID");
+                    b.HasKey("Id");
 
                     b.ToTable("ReliefProgress");
                 });
 
             modelBuilder.Entity("DAL3.Models.UserData", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasColumnType("integer")
+                        .UseIdentityByDefaultColumn();
 
                     b.Property<int>("Age")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<int>("Height")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<string>("Mail")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("text");
 
                     b.Property<int>("UserId")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
                     b.Property<float>("Weight")
                         .HasColumnType("real");
 
-                    b.HasKey("ID");
+                    b.HasKey("Id");
 
                     b.ToTable("UserData");
                 });
 
             modelBuilder.Entity("DAL3.Models.UserFatDownProgress", b =>
                 {
-                    b.Property<int>("FatDownProgressID")
-                        .HasColumnType("int");
+                    b.Property<int>("FatDownProgressId")
+                        .HasColumnType("integer");
 
-                    b.Property<int>("UserID")
-                        .HasColumnType("int");
+                    b.Property<int>("UserId")
+                        .HasColumnType("integer");
 
                     b.ToTable("UserFatDownProgress");
                 });
@@ -144,21 +144,21 @@ namespace MobileBackend.Migrations
             modelBuilder.Entity("DAL3.Models.UserMuscleUpProgress", b =>
                 {
                     b.Property<int>("MuscleUpProgress")
-                        .HasColumnType("int");
+                        .HasColumnType("integer");
 
-                    b.Property<int>("UserID")
-                        .HasColumnType("int");
+                    b.Property<int>("UserId")
+                        .HasColumnType("integer");
 
                     b.ToTable("UserMuscleUpProgress");
                 });
 
             modelBuilder.Entity("DAL3.Models.UserReliefProgress", b =>
                 {
-                    b.Property<int>("ReliefID")
-                        .HasColumnType("int");
+                    b.Property<int>("ReliefId")
+                        .HasColumnType("integer");
 
-                    b.Property<int>("UserID")
-                        .HasColumnType("int");
+                    b.Property<int>("UserId")
+                        .HasColumnType("integer");
 
                     b.ToTable("UserReliefProgress");
                 });

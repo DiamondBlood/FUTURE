@@ -5,9 +5,8 @@ using System.Text;
 namespace DAL3.Models
 {
     public class UserReliefProgress
-    {
-        
-        public int UserID { get; set; }
-        public int ReliefID { get; set; }
+    { 
+        public int UserId { get; set; }
+        public int ReliefId { get; set; }
     }
 }
