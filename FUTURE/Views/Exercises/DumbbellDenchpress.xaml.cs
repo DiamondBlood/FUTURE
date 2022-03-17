@@ -24,19 +24,31 @@ namespace FUTURE.Views.Exercises
 
         private void Ok1(object sender, EventArgs e)
         {
-            OkImage1.IsVisible = true;
+            if (OkImage1.IsVisible == false)
+                OkImage1.IsVisible = true;
+            else
+                OkImage1.IsVisible = false;
         }
         private void Ok2(object sender, EventArgs e)
         {
-            OkImage2.IsVisible = true;
+            if (OkImage2.IsVisible == false)
+                OkImage2.IsVisible = true;
+            else
+                OkImage2.IsVisible = false;
         }
         private void Ok3(object sender, EventArgs e)
         {
-            OkImage3.IsVisible = true;
+            if (OkImage3.IsVisible == false)
+                OkImage3.IsVisible = true;
+            else
+                OkImage3.IsVisible = false;
         }
         private void Ok4(object sender, EventArgs e)
         {
-            OkImage4.IsVisible = true;
+            if (OkImage4.IsVisible == false)
+                OkImage4.IsVisible = true;
+            else
+                OkImage4.IsVisible = false;
         }
 
         private async void NextExercise(object sender, EventArgs e)

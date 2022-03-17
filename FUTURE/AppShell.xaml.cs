@@ -17,6 +17,7 @@ namespace FUTURE
         {
             InitializeComponent();
             Shell.SetNavBarIsVisible(this, false);
+            Application.Current.MainPage = new NavigationPage(new MuscleUpGoalsPage());
         }
     }
 }
