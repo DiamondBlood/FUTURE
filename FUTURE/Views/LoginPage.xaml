@@ -4,16 +4,30 @@
              x:Class="FUTURE.Views.LoginPage"
              BackgroundColor="Black">
     <StackLayout>
-        <StackLayout>
-            <Label Text="Приветствуем в качалке" HorizontalOptions="Center"/>
-            <Frame Margin="40,12" CornerRadius="30" BackgroundColor="Aqua">
-                <Entry x:Name="Mail"/>
+        <Grid>
+            <Frame HeightRequest="900" BackgroundColor="Black">
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="130"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Image Grid.RowSpan="8" Source="LoadingPagePic" Opacity="0.2" Scale="1.10" ScaleX="1.2"/>
+                    <Label Text="Добро пожаловать" Style="{StaticResource NutritionMeal}" HorizontalOptions="Center"/>
+                    <Label Grid.Row="1" Text="Вход" TextColor="White" FontSize="30" HorizontalOptions="Center"/>
+                    <Label x:Name="Mail" Grid.Row="2" Text="Логин" TextColor="White" FontSize="24" HorizontalOptions="Center" />
+                    <Entry Margin="40,0,40,0" Grid.Row="3" BackgroundColor="Gray" FontSize="20" TextColor="White"/>
+                    <Label Grid.Row="6" Text="Войти" TextColor="White" FontSize="24" HorizontalOptions="Center" Margin="12">
+                        <Label.GestureRecognizers >
+                            <TapGestureRecognizer Tapped="LogIn_Tapped"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Grid>
             </Frame>
-            <Label Text="ВХОД" TextColor="Red" FontSize="24" HorizontalOptions="Center" Margin="12">
-                <Label.GestureRecognizers >
-                    <TapGestureRecognizer Tapped="LogIn_Tapped"/>
-                </Label.GestureRecognizers>
-            </Label>
-        </StackLayout>
+        </Grid>
     </StackLayout>
 </ContentPage>

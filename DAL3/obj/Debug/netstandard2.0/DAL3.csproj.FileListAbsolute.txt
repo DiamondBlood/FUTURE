@@ -38,3 +38,13 @@ D:\Programming\mobile\FUTURE2\FUTURE\DAL3\obj\Debug\netstandard2.0\DAL3.Assembly
 D:\Programming\mobile\FUTURE2\FUTURE\DAL3\obj\Debug\netstandard2.0\DAL3.csproj.CoreCompileInputs.cache
 D:\Programming\mobile\FUTURE2\FUTURE\DAL3\obj\Debug\netstandard2.0\DAL3.dll
 D:\Programming\mobile\FUTURE2\FUTURE\DAL3\obj\Debug\netstandard2.0\DAL3.pdb
+C:\Programming\Future1.0\FUTURE\DAL3\bin\Debug\netstandard2.0\DAL3.deps.json
+C:\Programming\Future1.0\FUTURE\DAL3\bin\Debug\netstandard2.0\DAL3.dll
+C:\Programming\Future1.0\FUTURE\DAL3\bin\Debug\netstandard2.0\DAL3.pdb
+C:\Programming\Future1.0\FUTURE\DAL3\obj\Debug\netstandard2.0\DAL3.csproj.AssemblyReference.cache
+C:\Programming\Future1.0\FUTURE\DAL3\obj\Debug\netstandard2.0\DAL3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programming\Future1.0\FUTURE\DAL3\obj\Debug\netstandard2.0\DAL3.AssemblyInfoInputs.cache
+C:\Programming\Future1.0\FUTURE\DAL3\obj\Debug\netstandard2.0\DAL3.AssemblyInfo.cs
+C:\Programming\Future1.0\FUTURE\DAL3\obj\Debug\netstandard2.0\DAL3.csproj.CoreCompileInputs.cache
+C:\Programming\Future1.0\FUTURE\DAL3\obj\Debug\netstandard2.0\DAL3.dll
+C:\Programming\Future1.0\FUTURE\DAL3\obj\Debug\netstandard2.0\DAL3.pdb

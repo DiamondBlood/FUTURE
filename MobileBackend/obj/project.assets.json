@@ -1674,20 +1674,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MateBook\\.nuget\\packages\\": {}
+    "C:\\Users\\almaz\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programming\\mobile\\FUTURE\\MobileBackend\\MobileBackend.csproj",
+      "projectUniqueName": "C:\\Programming\\Future1.0\\FUTURE\\MobileBackend\\MobileBackend.csproj",
       "projectName": "MobileBackend",
-      "projectPath": "D:\\Programming\\mobile\\FUTURE\\MobileBackend\\MobileBackend.csproj",
-      "packagesPath": "C:\\Users\\MateBook\\.nuget\\packages\\",
-      "outputPath": "D:\\Programming\\mobile\\FUTURE\\MobileBackend\\obj\\",
+      "projectPath": "C:\\Programming\\Future1.0\\FUTURE\\MobileBackend\\MobileBackend.csproj",
+      "packagesPath": "C:\\Users\\almaz\\.nuget\\packages\\",
+      "outputPath": "C:\\Programming\\Future1.0\\FUTURE\\MobileBackend\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\MateBook\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\almaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -1700,8 +1705,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Programming\\mobile\\FUTURE\\DAL3\\DAL3.csproj": {
-              "projectPath": "D:\\Programming\\mobile\\FUTURE\\DAL3\\DAL3.csproj"
+            "C:\\Programming\\Future1.0\\FUTURE\\DAL3\\DAL3.csproj": {
+              "projectPath": "C:\\Programming\\Future1.0\\FUTURE\\DAL3\\DAL3.csproj"
             }
           }
         }
@@ -1745,12 +1750,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.14, 5.0.14]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -1759,7 +1758,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
       }
     }
   }

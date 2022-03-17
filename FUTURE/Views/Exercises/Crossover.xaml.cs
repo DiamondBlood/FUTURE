@@ -40,7 +40,7 @@ namespace FUTURE.Views.Exercises
 
         private async void NextExercise(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Crossover());
+            await Navigation.PushAsync(new MuscleUpGoalsPage());
         }
     }
 }
