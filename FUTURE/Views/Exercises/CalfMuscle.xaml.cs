@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace FUTURE.Views.Exercises
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Crossover : ContentPage
+    public partial class CalfMuscle : ContentPage
     {
-        public Crossover()
+        public CalfMuscle()
         {
             InitializeComponent();
         }

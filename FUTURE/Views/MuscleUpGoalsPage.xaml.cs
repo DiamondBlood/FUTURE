@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace FUTURE.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MuscleUpGoalsPage : ContentPage
+    public partial class MuscleUpGoalsPage : TabbedPage
     {
         public MuscleUpGoalsPage()
         {
@@ -18,9 +18,19 @@ namespace FUTURE.Views
             InitializeComponent();
         }
 
-        private async void StartWorkout(object sender, EventArgs e)
+        private async void Day1StartWorkout(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Views.Exercises.BrenchPress());
+        }
+
+        private async void Day3StartWorkout(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.Exercises.PullUp());
+        }
+
+        private async void Day5StartWorkout(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.Exercises.SitUp());
         }
 
         private void BackButton_Clicked(object sender, EventArgs e)

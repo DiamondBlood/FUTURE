@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FUTURE.Views.MuscleUpWorkout"
+            xmlns:local="clr-namespace:FUTURE.Views"
+            BarBackgroundColor="Black"
+            SelectedTabColor="#FFD15C"
+            UnselectedTabColor="White">
+
+    <TabbedPage.Children >
+        <local:MuscleUpGoalsPage Title="Неделя 1" />
+        <local:MuscleUpGoalsPage Title="Неделя 2" />
+        <local:MuscleUpGoalsPage Title="Неделя 3" />
+        <local:MuscleUpGoalsPage Title="Неделя 4" />
+        <local:MuscleUpGoalsPage Title="Неделя 5" />
+    </TabbedPage.Children>
+</TabbedPage>

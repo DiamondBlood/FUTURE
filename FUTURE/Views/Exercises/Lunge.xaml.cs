@@ -10,15 +10,15 @@ using Xamarin.Forms.Xaml;
 namespace FUTURE.Views.Exercises
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Crossover : ContentPage
+    public partial class Lunge : ContentPage
     {
-        public Crossover()
+        public Lunge()
         {
             InitializeComponent();
         }
         private void BackButton_Clicked(object sender, EventArgs e)
         {
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 2; i++)
             {
                 Application.Current.MainPage.Navigation.PopAsync();
             }
@@ -53,12 +53,9 @@ namespace FUTURE.Views.Exercises
                 OkImage4.IsVisible = false;
         }
 
-        private void NextExercise(object sender, EventArgs e)
+        private async void NextExercise(object sender, EventArgs e)
         {
-            for (int i = 0; i < 3; i++)
-            {
-                Application.Current.MainPage.Navigation.PopAsync();
-            }
+            await Navigation.PushAsync(new CalfMuscle());
         }
     }
 }

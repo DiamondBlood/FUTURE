@@ -1,108 +1,236 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FUTURE.Views.MuscleUpGoalsPage"
-             BackgroundColor="Black">
-    <ContentPage.Content>
-        <StackLayout>
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="50"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="70"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-                
-                <Image Source="BackIcon"/>
-                <Button Opacity="0" Clicked="BackButton_Clicked"/>
-                <Label Margin="0,0,55,0" Grid.Column="1" Text="Набор массы" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24" FontAttributes="Bold"/>
-        </Grid>
-            <ScrollView Orientation="Horizontal">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="20"/>
-                    <RowDefinition Height="20"/>
-                </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="110"/>
-                        <ColumnDefinition Width="110"/>
-                        <ColumnDefinition Width="110"/>
-                        <ColumnDefinition Width="110"/>
-                        <ColumnDefinition Width="110"/>
-                    </Grid.ColumnDefinitions>
-                    <Label Grid.Column="0" Text="Неделя 1" Style="{StaticResource WeeksDays}"/>
-                    <Label Grid.Column="1" Text="Неделя 2" Style="{StaticResource WeeksDays}"/>
-                    <Label Grid.Column="2" Text="Неделя 3" Style="{StaticResource WeeksDays}"/>
-                    <Label Grid.Column="3" Text="Неделя 4" Style="{StaticResource WeeksDays}"/>
-                    <Label Grid.Column="4" Text="Неделя 5" Style="{StaticResource WeeksDays}"/>
-                    <Line Grid.Column="0" Grid.Row="1" Style="{StaticResource Lines}"/>
-                    <Line Grid.Column="1" Grid.Row="1" Style="{StaticResource Lines}"/>
-                    <Line Grid.Column="2" Grid.Row="1" Style="{StaticResource Lines}"/>
-                    <Line Grid.Column="3" Grid.Row="1" Style="{StaticResource Lines}"/>
-                    <Line Grid.Column="4" Grid.Row="1" Style="{StaticResource Lines}"/>
-                </Grid>
-            </ScrollView>
-            <ScrollView Orientation="Horizontal">
-                <Grid Margin="20,0,0,0">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="40"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="130"/>
-                        <ColumnDefinition Width="130"/>
-                        <ColumnDefinition Width="130"/>
-                        <ColumnDefinition Width="130"/>
-                        <ColumnDefinition Width="130"/>
-                        <ColumnDefinition Width="130"/>
-                        <ColumnDefinition Width="130"/>
-                    </Grid.ColumnDefinitions>
-                    <Rectangle   Style="{StaticResource RectangleDays}"/>
-                    <Label Margin="0,0,10,0" Text="День 1" Style="{StaticResource WeeksDays}"/>
-                    <Rectangle Grid.Column="1" Style="{StaticResource RectangleDays}"/>
-                    <Label Margin="0,0,10,0" Grid.Column="1" Text="День 2" Style="{StaticResource WeeksDays}"/>
-                    <Rectangle Grid.Column="2"  Style="{StaticResource RectangleDays}"/>
-                    <Label Margin="0,0,10,0" Grid.Column="2" Text="День 3" Style="{StaticResource WeeksDays}"/>
-                    <Rectangle Grid.Column="3" Style="{StaticResource RectangleDays}"/>
-                    <Label Margin="0,0,10,0" Grid.Column="3" Text="День 4" Style="{StaticResource WeeksDays}"/>
-                    <Rectangle Grid.Column="4" Style="{StaticResource RectangleDays}"/>
-                    <Label Margin="0,0,10,0" Grid.Column="4" Text="День 5" Style="{StaticResource WeeksDays}"/>
-                    <Rectangle Grid.Column="5" Style="{StaticResource RectangleDays}"/>
-                    <Label Margin="0,0,10,0" Grid.Column="5" Text="День 6" Style="{StaticResource WeeksDays}"/>
-                    <Rectangle Grid.Column="6" Style="{StaticResource RectangleDays}"/>
-                    <Label Margin="0,0,10,0"  Grid.Column="6" Text="День 7" Style="{StaticResource WeeksDays}"/>
-                </Grid>
-            </ScrollView>
-            <Grid Margin="25,20,10,0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="45"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Rectangle Style="{StaticResource RectangleDays}"/>
-                <Label Text="Начать" Style="{StaticResource WeeksDays}" FontSize="Large"/>
-                <Button Opacity="0" Clicked="StartWorkout"/>
-            </Grid>
-            <ScrollView Margin="0,20,0,0">
+             BarBackgroundColor="Black"
+            SelectedTabColor="#FFD15C"
+            UnselectedTabColor="White">
+    <TabbedPage.Children>
+        <ContentPage Title="День 1" BackgroundColor="Black">
+            <StackLayout>
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="200"/>
-                        <RowDefinition Height="200"/>
-                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="50"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="* "/>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Image Source="BrenchPress" Opacity="0.7" />
-                    <Label Text="Жим лежа" Style="{StaticResource Exercise}"/>
-                    <Image Grid.Row="1" Source="dumbbellbenchpress" Opacity="0.7" ScaleX="1.1" />
-                    <Label Grid.Row="1" Text="Жим гантелей на наклонной скамье" Style="{StaticResource Exercise}"/>
-                    <Image Grid.Row="2" Source="Crossover" Opacity="0.7" ScaleX="1.7" Aspect="AspectFit"/>
-                    <Label Grid.Row="2" Text="Кроссовер" Style="{StaticResource Exercise}"/>
-                </Grid>
 
-            </ScrollView>
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+                    <Image Source="BackIcon"/>
+                    <Button Opacity="0" Clicked="BackButton_Clicked"/>
+                    <Label Margin="0,0,55,0" Grid.Column="1" Text="Набор массы" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24" FontAttributes="Bold"/>
+                </Grid>
+                <Grid Margin="25,20,10,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="45"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Style="{StaticResource RectangleDays}"/>
+                    <Label Text="Начать" Style="{StaticResource WeeksDays}" FontSize="Large"/>
+                    <Button Opacity="0" Clicked="Day1StartWorkout"/>
+                </Grid>
+                <ScrollView Margin="0,20,0,0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="200"/>
+                            <RowDefinition Height="200"/>
+                            <RowDefinition Height="200"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="* "/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="BrenchPress" Opacity="0.7" />
+                        <Label Text="Жим лежа" Style="{StaticResource Exercise}"/>
+                        <Image Grid.Row="1" Source="dumbbellbenchpress" Opacity="0.7" ScaleX="1.1" />
+                        <Label Grid.Row="1" Text="Жим гантелей на наклонной скамье" Style="{StaticResource Exercise}"/>
+                        <Image Grid.Row="2" Source="Crossover" Opacity="0.7" ScaleX="1.7" Aspect="AspectFit"/>
+                        <Label Grid.Row="2" Text="Кроссовер" Style="{StaticResource Exercise}"/>
+                    </Grid>
+                </ScrollView>
+            </StackLayout>
+        </ContentPage>
+        
+        
+        <ContentPage Title="День 2" BackgroundColor="Black">
+            <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="BackIcon"/>
+                    <Button Opacity="0" Clicked="BackButton_Clicked"/>
+                    <Label Margin="0,0,55,0" Grid.Column="1" Text="Набор массы" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24" FontAttributes="Bold"/>
+                </Grid>
+                <Image Source="Rest" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="200" WidthRequest="200" Margin="0,100,0,0"/>
+                <Label Text="Отдых" Style="{StaticResource NutritionHead}" Margin="0,0,20,0"/>
+            </StackLayout>
+        </ContentPage>
+        
+        
+        <ContentPage Title="День 3" BackgroundColor="Black">
+            <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="BackIcon"/>
+                    <Button Opacity="0" Clicked="Day3StartWorkout"/>
+                    <Label Margin="0,0,55,0" Grid.Column="1" Text="Набор массы" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24" FontAttributes="Bold"/>
+                </Grid>
+                <Grid Margin="25,20,10,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="45"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Style="{StaticResource RectangleDays}"/>
+                    <Label Text="Начать" Style="{StaticResource WeeksDays}" FontSize="Large"/>
+                    <Button Opacity="0" Clicked="Day3StartWorkout"/>
+                </Grid>
+                <ScrollView Margin="0,20,0,0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="200"/>
+                            <RowDefinition Height="200"/>
+                            <RowDefinition Height="200"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="Pullup" Opacity="0.7" ScaleX="1.2" />
+                        <Label Text="Подтягивания" Style="{StaticResource Exercise}"/>
+                        <Image Grid.Row="1" Source="EZPull" Opacity="0.7" ScaleX="1.1" />
+                        <Label Grid.Row="1" Text="Подъем EZ-штанги на бицепс" Style="{StaticResource Exercise}"/>
+                        <Image Grid.Row="2" Source="Kist" Opacity="0.7" ScaleX="1.3" Aspect="AspectFit"/>
+                        <Label Grid.Row="2" Text="Сгибание запястий со шиангой на скамье" Style="{StaticResource Exercise}"/>
+                    </Grid>
+                </ScrollView>
+            </StackLayout>
+        </ContentPage>
+        
+        
+        <ContentPage Title="День 4" BackgroundColor="Black">
+            <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="BackIcon"/>
+                    <Button Opacity="0" Clicked="BackButton_Clicked"/>
+                    <Label Margin="0,0,55,0" Grid.Column="1" Text="Набор массы" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24" FontAttributes="Bold"/>
+                </Grid>
+                <Image Source="Rest" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="200" WidthRequest="200" Margin="0,100,0,0"/>
+                <Label Text="Отдых" Style="{StaticResource NutritionHead}" Margin="0,0,20,0"/>
+            </StackLayout>
+        </ContentPage>
+        
+        
+        <ContentPage Title="День 5" BackgroundColor="Black">
+            <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="BackIcon"/>
+                    <Button Opacity="0" Clicked="Day5StartWorkout"/>
+                    <Label Margin="0,0,55,0" Grid.Column="1" Text="Набор массы" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24" FontAttributes="Bold"/>
+                </Grid>
+                <Grid Margin="25,20,10,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="45"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Style="{StaticResource RectangleDays}"/>
+                    <Label Text="Начать" Style="{StaticResource WeeksDays}" FontSize="Large"/>
+                    <Button Opacity="0" Clicked="Day5StartWorkout"/>
+                </Grid>
+                <ScrollView Margin="0,20,0,0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="200"/>
+                            <RowDefinition Height="200"/>
+                            <RowDefinition Height="200"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="* "/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="SitUp" Opacity="0.7" ScaleX="1.3" />
+                        <Label Text="Приседания" Style="{StaticResource Exercise}"/>
+                        <Image Grid.Row="1" Source="Lunge" Opacity="0.7" ScaleX="1.3" />
+                        <Label Grid.Row="1" Text="Выпады с гантелями" Style="{StaticResource Exercise}"/>
+                        <Image Grid.Row="2" Source="CalfMuscle" Opacity="0.7" ScaleX="1.3" Aspect="AspectFit"/>
+                        <Label Grid.Row="2" Text="Подъем на носки" Style="{StaticResource Exercise}"/>
+                    </Grid>
+                </ScrollView>
+            </StackLayout>
+        </ContentPage>
+        
+        
+        <ContentPage Title="День 6" BackgroundColor="Black">
+            <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="BackIcon"/>
+                    <Button Opacity="0" Clicked="BackButton_Clicked"/>
+                    <Label Margin="0,0,55,0" Grid.Column="1" Text="Набор массы" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24" FontAttributes="Bold"/>
+                </Grid>
+                <Image Source="Rest" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="200" WidthRequest="200" Margin="0,100,0,0"/>
+                <Label Text="Отдых" Style="{StaticResource NutritionHead}" Margin="0,0,20,0"/>
+            </StackLayout>
+        </ContentPage>
+        
+        
+        <ContentPage Title="День 7" BackgroundColor="Black">
+            <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="BackIcon"/>
+                    <Button Opacity="0" Clicked="BackButton_Clicked"/>
+                    <Label Margin="0,0,55,0" Grid.Column="1" Text="Набор массы" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24" FontAttributes="Bold"/>
+                </Grid>
+                <Image Source="Rest" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="200" WidthRequest="200" Margin="0,100,0,0"/>
+                <Label Text="Отдых" Style="{StaticResource NutritionHead}" Margin="0,0,20,0"/>
+            </StackLayout>
+        </ContentPage>
+    </TabbedPage.Children>
+</TabbedPage>

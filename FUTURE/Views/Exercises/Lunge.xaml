@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FUTURE.Views.Exercises.Lunge"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="BackIcon"/>
+                    <Button Opacity="0" Clicked="BackButton_Clicked"/>
+                    <Label Margin="0,0,55,0" Grid.Column="1" Text="Выпады с гантелями" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24" FontAttributes="Bold"/>
+                </Grid>
+                <WebView Source="https://www.youtube.com/embed/vNrkKOiksCs"
+                     WidthRequest="300"
+                     MinimumWidthRequest="300"
+                     MinimumHeightRequest="200"
+                     HeightRequest="200"/>
+
+                <Frame Padding="1.5" Margin="20,5,20,0" BackgroundColor="#717171" CornerRadius="5" HeightRequest="120">
+                    <Frame Padding="1" BackgroundColor="Black" CornerRadius="4">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50"/>
+                                <RowDefinition Height="0.5"/>
+                                <RowDefinition Height="40"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Margin="10,0,0,0"  Text="Кол-во подходов" Style="{StaticResource ExerciseGoals}"/>
+                            <Label Grid.Column="1" Text="Кол-во повторений" Style="{StaticResource ExerciseGoals}"/>
+                            <Label Margin="0,0,30,0" Grid.Column="2" Text="Вес" Style="{StaticResource ExerciseGoals}"/>
+                            <Label Grid.Column="3" Text="Отдых (сек)" Style="{StaticResource ExerciseGoals}"/>
+                            <Line Grid.ColumnSpan="4" Grid.Row="1" X2="200" Style="{StaticResource ExerciseLine}" />
+                            <Label Grid.Row="2" Grid.Column="0" Text="4" Style="{StaticResource WeeksDays}" FontSize="24"/>
+                            <Label Grid.Row="2" Grid.Column="1" Text="8" Style="{StaticResource WeeksDays}" FontSize="24"/>
+                            <Label Grid.Row="2" Grid.Column="2" Text="макс от рабочего" Style="{StaticResource WeeksDays}"/>
+                            <Label Grid.Row="2" Grid.Column="3" Text="120" Style="{StaticResource WeeksDays}" FontSize="24"/>
+                        </Grid>
+                    </Frame>
+                </Frame>
+
+                <Frame Padding="1" Margin="0,5,0,0" BackgroundColor="#171717" HeightRequest="50">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="55"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Margin="0,0,0,0" Text="Предыдущий результат" TextColor="White" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <Label Grid.Column="1" Text="Вес" TextColor="White" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <Label Grid.Column="2" Text="Повторения" TextColor="White" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <Label Grid.Column="3" Text="Отметить выполнение" TextColor="White" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    </Grid>
+                </Frame>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="1"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0"/>
+                    <Label Grid.Row="2"/>
+                    <Label Grid.Row="4"/>
+                    <Label Grid.Row="6"/>
+                    <Entry Grid.Column="1" Grid.Row="0" Style="{StaticResource ExerciseEntry}"/>
+                    <Entry Grid.Column="1" Grid.Row="2" Style="{StaticResource ExerciseEntry}"/>
+                    <Entry Grid.Column="1" Grid.Row="4" Style="{StaticResource ExerciseEntry}"/>
+                    <Entry Grid.Column="1" Grid.Row="6" Style="{StaticResource ExerciseEntry}"/>
+                    <Entry Grid.Column="2" Grid.Row="0" Style="{StaticResource ExerciseEntry}"/>
+                    <Entry Grid.Column="2" Grid.Row="2" Style="{StaticResource ExerciseEntry}"/>
+                    <Entry Grid.Column="2" Grid.Row="4" Style="{StaticResource ExerciseEntry}"/>
+                    <Entry Grid.Column="2" Grid.Row="6" Style="{StaticResource ExerciseEntry}"/>
+                    <Image Grid.Column="3" Grid.Row="0" Source="Tapok" Scale="0.5" Margin="0,0,20,0"/>
+                    <Image Grid.Column="3" Grid.Row="2" Source="Tapok" Scale="0.5" Margin="0,0,20,0"/>
+                    <Image Grid.Column="3" Grid.Row="4" Source="Tapok" Scale="0.5" Margin="0,0,20,0"/>
+                    <Image Grid.Column="3" Grid.Row="6" Source="Tapok" Scale="0.5" Margin="0,0,20,0"/>
+                    <Image x:Name="OkImage1" Grid.Column="3" Grid.Row="0" Source="Ok" Scale="0.5" Margin="0,0,20,0" IsVisible="False"/>
+                    <Image x:Name="OkImage2" Grid.Column="3" Grid.Row="2" Source="Ok" Scale="0.5" Margin="0,0,20,0" IsVisible="False"/>
+                    <Image x:Name="OkImage3" Grid.Column="3" Grid.Row="4" Source="Ok" Scale="0.5" Margin="0,0,20,0" IsVisible="False"/>
+                    <Image x:Name="OkImage4" Grid.Column="3" Grid.Row="6" Source="Ok" Scale="0.5" Margin="0,0,20,0" IsVisible="False"/>
+                    <Button Grid.Column="3" Grid.Row="0" Scale="0.7" Margin="0,0,20,0" Opacity="0" Clicked="Ok1"/>
+                    <Button Grid.Column="3" Grid.Row="2" Scale="0.7" Margin="0,0,20,0" Opacity="0" Clicked="Ok2"/>
+                    <Button Grid.Column="3" Grid.Row="4" Scale="0.7" Margin="0,0,20,0" Opacity="0" Clicked="Ok3"/>
+                    <Button Grid.Column="3" Grid.Row="6" Scale="0.7" Margin="0,0,20,0" Opacity="0" Clicked="Ok4"/>
+                    <Line Grid.ColumnSpan="4" Grid.Row="1" Style="{StaticResource ExerciseLine}"/>
+                    <Line Grid.ColumnSpan="4" Grid.Row="3" Style="{StaticResource ExerciseLine}"/>
+                    <Line Grid.ColumnSpan="4" Grid.Row="5" Style="{StaticResource ExerciseLine}"/>
+                    <Line Grid.ColumnSpan="4" Grid.Row="7" Style="{StaticResource ExerciseLine}"/>
+
+
+
+                </Grid>
+                <Frame Padding="1" CornerRadius="5" BackgroundColor="#FFD15C" Margin="30,10,30,10" HeightRequest="50">
+                    <Frame BackgroundColor="Black" CornerRadius="5" Padding="1" >
+                        <Button Text="Завершить упражнение" TextColor="White" BackgroundColor="Black" FontSize="20" Clicked="NextExercise"/>
+                    </Frame>
+                </Frame>
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -10,12 +10,13 @@ using Xamarin.Forms.Xaml;
 namespace FUTURE.Views.Exercises
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Crossover : ContentPage
+    public partial class Kist : ContentPage
     {
-        public Crossover()
+        public Kist()
         {
             InitializeComponent();
         }
+
         private void BackButton_Clicked(object sender, EventArgs e)
         {
             for (int i = 0; i < 3; i++)
