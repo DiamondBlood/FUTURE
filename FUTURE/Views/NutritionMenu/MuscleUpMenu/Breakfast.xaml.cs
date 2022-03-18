@@ -7,14 +7,19 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace FUTURE.Views
+namespace FUTURE.Views.NutritionMenu.MuscleUpMenu
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Nutrition : ContentPage
+    public partial class Breakfast : ContentPage
     {
-        public Nutrition()
+        public Breakfast()
         {
             InitializeComponent();
+        }
+
+        private void BackButton_Clicked(object sender, EventArgs e)
+        {
+            App.Current.MainPage.Navigation.PopAsync();
         }
     }
 }

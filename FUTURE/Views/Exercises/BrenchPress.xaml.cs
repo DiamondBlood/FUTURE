@@ -18,9 +18,9 @@ namespace FUTURE.Views.Exercises
             InitializeComponent();
         }
 
-        private async void BackButton_Clicked(object sender, EventArgs e)
+        private void BackButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new BrenchPress());
+            App.Current.MainPage.Navigation.PopAsync();
         }
 
         private void Ok1(object sender, EventArgs e)

@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FUTURE.Views.NutritionPage"
+          
+            BarBackgroundColor="Black"
+            SelectedTabColor="#FFD15C"
+            UnselectedTabColor="White">
+    
+    <TabbedPage.Children>
+        <ContentPage Title="Набор массы" BackgroundColor="Black">
+            <StackLayout>
+                <Label Margin="0,10,0,0" Text="МЕНЮ" Style="{StaticResource Exercise}" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <ScrollView>
+                    <Grid Margin="15,0,15,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="220"/>
+                            <RowDefinition Height="190"/>
+                            <RowDefinition Height="220"/>
+                            <RowDefinition Height="220"/>
+                            <RowDefinition Height="220"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="Breakfast" Style="{StaticResource MealImage}">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="MUBreakfast"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Завтрак" Style="{StaticResource NutritionMeal}"/>
+                        <Image Grid.Row="1" Source="Snack" Style="{StaticResource MealImage}">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="MUSnack"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                            
+                        <Label Grid.Row="1" Text="Перекус" Style="{StaticResource NutritionMeal}"/>
+                        <Image Grid.Row="2" Source="Lunch" Style="{StaticResource MealImage}">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="MULunch"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Grid.Row="2" Text="Обед" Style="{StaticResource NutritionMeal}"/>
+                        <Image Grid.Row="3" Source="Poldnik" Style="{StaticResource MealImage}">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="MUPoldnik"/>
+                        </Image.GestureRecognizers>
+                        </Image>
+                        <Label Grid.Row="3" Text="Полдник" Style="{StaticResource NutritionMeal}"/>
+                        <Image Grid.Row="4" Source="Dinner" Style="{StaticResource MealImage}">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="MUDinner"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Grid.Row="4" Text="Ужин" Style="{StaticResource NutritionMeal}"/>
+                    </Grid>
+
+                </ScrollView>
+            </StackLayout>
+        </ContentPage>
+        <ContentPage Title="Сушка" BackgroundColor="Black">
+            <StackLayout>
+                <Label Margin="0,10,0,0" Text="МЕНЮ" Style="{StaticResource Exercise}" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <ScrollView>
+                    <Grid Margin="15,0,15,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="220"/>
+                            <RowDefinition Height="190"/>
+                            <RowDefinition Height="220"/>
+                            <RowDefinition Height="220"/>
+                            <RowDefinition Height="220"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="Breakfast" Style="{StaticResource MealImage}">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="SBreakfast"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Завтрак" Style="{StaticResource NutritionMeal}"/>
+                        <Image Grid.Row="1" Source="Snack" Style="{StaticResource MealImage}">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="SSnack"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                        <Label Grid.Row="1" Text="Перекус" Style="{StaticResource NutritionMeal}"/>
+                        <Image Grid.Row="2" Source="Lunch" Style="{StaticResource MealImage}">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="SLunch"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Grid.Row="2" Text="Обед" Style="{StaticResource NutritionMeal}"/>
+                        <Image Grid.Row="3" Source="Poldnik" Style="{StaticResource MealImage}">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="SPoldnik"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Grid.Row="3" Text="Полдник" Style="{StaticResource NutritionMeal}"/>
+                        <Image Grid.Row="4" Source="Dinner" Style="{StaticResource MealImage}">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="SDinner"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Grid.Row="4" Text="Ужин" Style="{StaticResource NutritionMeal}"/>
+                    </Grid>
+
+                </ScrollView>
+            </StackLayout>
+        </ContentPage>
+        <ContentPage Title="Похудение" BackgroundColor="Black">
+            <StackLayout>
+                <Label Margin="0,10,0,0" Text="МЕНЮ" Style="{StaticResource Exercise}" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <ScrollView>
+                    <Grid Margin="15,0,15,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="220"/>
+                            <RowDefinition Height="190"/>
+                            <RowDefinition Height="220"/>
+                            <RowDefinition Height="220"/>
+                            <RowDefinition Height="220"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="Breakfast" Style="{StaticResource MealImage}">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="XBreakfast"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Text="Завтрак" Style="{StaticResource NutritionMeal}"/>
+                        <Image Grid.Row="1" Source="Snack" Style="{StaticResource MealImage}">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="XSnack"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+
+                        <Label Grid.Row="1" Text="Перекус" Style="{StaticResource NutritionMeal}"/>
+                        <Image Grid.Row="2" Source="Lunch" Style="{StaticResource MealImage}">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="XLunch"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Grid.Row="2" Text="Обед" Style="{StaticResource NutritionMeal}"/>
+                        <Image Grid.Row="3" Source="Poldnik" Style="{StaticResource MealImage}">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="XPoldnik"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Grid.Row="3" Text="Полдник" Style="{StaticResource NutritionMeal}"/>
+                        <Image Grid.Row="4" Source="Dinner" Style="{StaticResource MealImage}">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="XDinner"/>
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label Grid.Row="4" Text="Ужин" Style="{StaticResource NutritionMeal}"/>
+                    </Grid>
+
+                </ScrollView>
+            </StackLayout>
+        </ContentPage>
+    </TabbedPage.Children>
+</TabbedPage>

@@ -7,20 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace FUTURE.Views
+namespace FUTURE.Views.NutritionMenu.MuscleUpMenu
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MuscleUpGoalsPage : ContentPage
+    public partial class Snack : ContentPage
     {
-        public MuscleUpGoalsPage()
+        public Snack()
         {
-            NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
-        }
-
-        private async void StartWorkout(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Views.Exercises.BrenchPress());
         }
 
         private void BackButton_Clicked(object sender, EventArgs e)

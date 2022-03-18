@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FUTURE.Views.NutritionMenu.MuscleUpMenu.Dinner"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="70"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Image Source="BackIcon"/>
+                <Button Opacity="0" Clicked="BackButton_Clicked"/>
+                <Label Margin="0,0,70,0" Grid.Column="1" Text="Ужин" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24" FontAttributes="Bold"/>
+            </Grid>
+            <Label Text="ТВОРОГ В ЛАВАШЕ С СЫРОМ И ПОМИДОРОМ" Style="{StaticResource NutritionHead}"/>
+            <Label Margin="10,10,10,0"  Style="{StaticResource Recipe}" Text="Состав:
+&#10;1. Тонкий лаваш
+&#10;2. Творог нежирный 100-200гр в зависимости от размера порции
+&#10;3. Совсем немного сыра
+&#10;4. Помидор, зелень, оливки, болгарский перец, маринованные огурчики – наполнение по желанию
+&#10;
+&#10;Творог немного посолить намазать тонким слоем на лаваш.
+&#10;Сверху натереть немного сыра.
+&#10;Затем положите сверху мелко порезанные овощи: помидор или болгарский перец.
+&#10;Посыпьте сверху любой зеленью. Для вкуса можно еще добавить мелко порезанные маринованные
+&#10;огурчики или немного оливок порезанных на половинки.
+&#10;Заверните лаваш трубочкой и нарежьте кусочками примерно по 3-4 сантиметра."/>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

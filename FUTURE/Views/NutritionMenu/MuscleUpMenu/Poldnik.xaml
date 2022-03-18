@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FUTURE.Views.NutritionMenu.MuscleUpMenu.Poldnik"
+             BackgroundColor="Black">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="70"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Image Source="BackIcon"/>
+                <Button Opacity="0" Clicked="BackButton_Clicked"/>
+                <Label Margin="0,0,70,0" Grid.Column="1" Text="Полдник" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24" FontAttributes="Bold"/>
+            </Grid>
+            <Label Text="БЕЛКОВЫЙ КОКТЕЙЛЬ «РАСТАЯВШЕЕ МОРОЖЕНОЕ»" Style="{StaticResource NutritionHead}"/>
+            <Label Margin="10,10,10,0"  Style="{StaticResource Recipe}" Text="Коктейль готовится в блендере.
+&#10;Этот коктейль подходит всем, и спортсменам, и тем кто на диете для похудения.
+&#10;Вы получаете порцию белка плюс полезные вещества кефира плюс витамины и хорошее настроение )
+И все это без лишних жиров и углеводов. Здоровое питание для всех.
+&#10;
+&#10;Состав:
+&#10;1. Нежирный свежий кефир
+&#10;2. Белковый порошок (спортивная пищевая добавка) или нежирный творог
+&#10;3. Клубника (зимой в магазинах продается замороженная)
+&#10;
+&#10;Приготовление:
+&#10;Налейте в блендер 100-200 мл кефира.
+&#10;Положите побольше замороженной клубники.
+&#10;Добавьте 30гр белкового порошка (спортивное питание) со вкусом ванили или шоколада.
+&#10;Если нет белкового порошка (протеина), то добавьте 50-100гр. нежирного творога.
+&#10;
+&#10;Взбиваем все в блендере в течение минуты и готово :-)
+&#10;Трубочка для коктейля и можно посыпать корицей…
+&#10;Клубнику кладите замороженную, чтобы коктейль получился прохладный и густоватый.
+&#10;Если клубники положить побольше, то по консистенции будет похоже на чуть подтаявшее мороженое."/>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
